@@ -51,23 +51,23 @@ body {
 }
 
 .topbar {
-  width: min(92vw, 860px);
-  margin-top: 28px;
-  padding: 14px 20px;
+  position: sticky;
+  top: 0;
+  z-index: 10;
+  width: 100%;
+  padding: 16px 24px;
   display: flex;
   align-items: center;
   justify-content: space-between;
-  background: rgba(255, 255, 255, 0.8);
-  backdrop-filter: blur(8px);
-  border: 1px solid rgba(229, 231, 235, 0.8);
-  border-radius: 16px;
-  box-shadow: 0 10px 25px rgba(79, 70, 229, 0.08);
+  background: linear-gradient(135deg, #4f46e5, #7c3aed);
+  color: #fff;
+  box-shadow: 0 8px 22px rgba(79, 70, 229, 0.18);
 }
 
 .brand {
   font-size: 1.2rem;
   font-weight: 800;
-  color: var(--primary-dark);
+  color: #fff;
 }
 
 .nav-links {
@@ -76,17 +76,19 @@ body {
 }
 
 .nav-links a {
-  color: var(--muted);
+  color: rgba(255, 255, 255, 0.85);
   text-decoration: none;
   font-weight: 600;
-  transition: color 0.2s ease;
+  transition: color 0.2s ease, opacity 0.2s ease;
 }
 
 .nav-links a:hover {
-  color: var(--primary);
+  color: #ffffff;
+  opacity: 1;
 }
 
 .app {
+  margin-top: 28px;
   width: min(92vw, 560px);
   background: var(--card);
   border: 1px solid var(--border);
